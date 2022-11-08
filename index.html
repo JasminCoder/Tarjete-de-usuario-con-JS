@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Usuario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <br>
+    <div class="tarjeta">
+        <div class="encabezado">
+            <img src="images/user-circle.png" alt="img usuario" class="img_usuario"
+            ondblclick="doble_click_avatar()"> <!--cambiar imagen-->
+        </div>
+
+        <div class="body">
+            <!--cambiar el nombre al hacer click en el nombre.. (this) envia el h1 a js-->
+            <h1 onmouseover="over()" onmouseout="out()" onclick="cambieNombre(this)">Juana De Arco</h1> <!--cambiar el nombre-->
+            <h3>
+                <img src="images/map-marker.png" alt="Mapa" class="icono" onclick="cambiaImagen(this)">Francia
+                
+            </h3>
+            <p id="descripcion" ondblclick="elimine(this)"> <!--para eliminar al hacer doble click, no se puede reaparecer-->
+                Developer | Engineer | Problem Solver
+                <br>
+                Master of shadows and the Internet
+            </p>
+            <p>
+                <a href="#" onclick="click_editar()">
+                    <img src="images/gear.png" alt="engrane" class="icono">
+                    editar perfil
+                </a>
+            </p>
+            <div><!--cuadro texto-->
+                <input type="text" name="nombre" id="nombre" onchange="cambioInput()"> 
+                <!--onchange cuando hay algun cambio en el imput-->
+            </div>
+        </div>
+
+    </div>
+<script src="js/script.js"></script> <!--enlace js.. Se pone al final para q primero se cargue todo el html y 
+                                    luego se ejecute lo js-->
+</body>
+</html>

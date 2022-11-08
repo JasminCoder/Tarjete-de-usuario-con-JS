@@ -1,0 +1,45 @@
+* { /*css reset*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.tarjeta {
+    width: 500px;
+    border: 1px solid gray;
+    margin: 0 auto; /*centra*/
+}
+
+.encabezado {
+    height: 80px;
+    background-color: rgb(156, 10, 137); 
+}
+
+.body {
+    height: 150px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.pink {
+    color: rgb(252, 149, 166);
+}
+
+.img_usuario {
+    width: 50px;
+    border: 2px solid lightgrey;
+    border-radius: 50px;
+    position: relative; /*tb funcionarioun position absolut (abria q 
+    poner position relative en el div padre y otros valores de top y left)*/
+    top: 45px;
+    left: 25px;
+}
+
+.icono {
+    width: 10px;
+}
